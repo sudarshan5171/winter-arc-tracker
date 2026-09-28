@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204691497606",
+    "project_id": "winter-arc-tracker-befec",
+    "storage_bucket": "winter-arc-tracker-befec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204691497606:android:dbff7912eead1ddacb2707",
+        "android_client_info": {
+          "package_name": "com.hvxlabs.wa_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4MXPML4sOsdFoIrwwteZNqymu8J8poyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Winter Arc Tracker</title>
+    <style>
+        :root {
+            --primary: #4FA6E0;
+            --primary-dark: #2B78B0;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --bg-card: #FFFFFF;
+            --bg-body: #F8FAFC;
+            --border: #E2E8F0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-main: #F8FAFC;
+                --text-muted: #94A3B8;
+                --bg-card: #151A22;
+                --bg-body: #0A0D12;
+                --border: #242D38;
+            }
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo-box {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(79,166,224,0.15), rgba(79,166,224,0.05));
+            border: 1px solid rgba(79,166,224,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+        }
+        .meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 12px 0 20px 24px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background: rgba(79, 166, 224, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: var(--text-main);
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-box">❄️</div>
+            <div>
+                <h1>Winter Arc Tracker</h1>
+                <div class="meta">Privacy Policy • Effective Date: September 2026</div>
+            </div>
+        </div>
+
+        <p><strong>Winter Arc Tracker</strong> ("we", "our", or "the App") respects your privacy and is dedicated to protecting your personal data. This Privacy Policy outlines how your information is handled, stored, and protected when using our mobile application.</p>
+
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> Winter Arc Tracker is built with an offline-first architecture. Your habits, streaks, and progress remain under your control and are stored locally on your device.
+        </div>
+
+        <h2>1. Information We Collect and Store</h2>
+        <p>When you use Winter Arc Tracker, the application processes the following types of information:</p>
+        <ul>
+            <li><strong>Habits and Goals:</strong> Custom habit titles, preset goals, units of measurement, and target numerical values.</li>
+            <li><strong>Completion Records:</strong> Daily check-in timestamps, status completions, streaks, and calendar heatmap history.</li>
+            <li><strong>App Preferences:</strong> Custom challenge dates, notification reminder times, and theme settings (Light/Dark mode).</li>
+        </ul>
+
+        <h2>2. Data Storage & Cloud Synchronization</h2>
+        <ul>
+            <li><strong>Local Storage (Hive):</strong> All habit and streak information is encrypted and stored locally on your device's persistent storage.</li>
+            <li><strong>Cloud Backup (Google Firebase):</strong> For users who utilize silent cloud backup, data is synced to Google Cloud Firestore under a randomly generated anonymous UID without collecting your name, phone number, or personal identity.</li>
+        </ul>
+
+        <h2>3. Device Permissions & Notifications</h2>
+        <p>Winter Arc Tracker requests the following device permissions solely to support core features:</p>
+        <ul>
+            <li><strong>Notifications (`POST_NOTIFICATIONS`):</strong> Used exclusively to deliver your scheduled daily habit reminder alerts at your chosen time. We never send promotional messages or third-party ads.</li>
+            <li><strong>Exact Alarms (`SCHEDULE_EXACT_ALARM`):</strong> Used to trigger alarms at the exact designated minute, even when the device is locked or the app is closed.</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>The App integrates trusted third-party SDKs to facilitate cloud sync and notifications:</p>
+        <ul>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase (Authentication & Cloud Firestore)</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+        </ul>
+
+        <h2>5. Data Retention & User Control</h2>
+        <p>You have full control over your data at all times:</p>
+        <ul>
+            <li>You can modify or delete individual habits at any time within the app.</li>
+            <li>You can erase all historical data and reset your Winter Arc by selecting <strong>"Reset All Arc & Streak Data"</strong> in the Settings screen.</li>
+            <li>Uninstalling the app removes all local database records from your device.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Winter Arc Tracker does not knowingly collect personally identifiable information from children under the age of 13.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@hvxlabs.com">support@hvxlabs.com</a><br>
+        <strong>Developer:</strong> HVX Labs (com.hvxlabs.wa_tracker)</p>
+
+        <div class="footer">
+            © 2026 Winter Arc Tracker • HVX Labs. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
